@@ -8,11 +8,8 @@ namespace ChallengesWithTestsMark8
     {
         public bool CharacterIsALetter(char c)
         {
-            if (Char.IsLetter(c))
-            {
-                return true;
-            }
-            return false;
+            return Char.IsLetter(c);
+          
 
         }
 
