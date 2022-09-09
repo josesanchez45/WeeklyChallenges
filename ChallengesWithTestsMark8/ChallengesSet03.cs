@@ -19,15 +19,15 @@ namespace ChallengesWithTestsMark8
             }
 
             var x = numbers.Where(x => x % 2 != 0).ToList().Sum();
-            
+
 
             if (x % 2 == 0)
             {
                 return false;
             }
             else return true;
-           
-                
+
+
 
 
 
@@ -35,7 +35,7 @@ namespace ChallengesWithTestsMark8
 
         public bool PasswordContainsUpperLowerAndNumber(string password)
         {
-        
+
             var x = password.Any(char.IsUpper);
             var y = password.Any(char.IsLower);
             var z = password.Any(char.IsDigit);
@@ -45,7 +45,7 @@ namespace ChallengesWithTestsMark8
                 return true;
             }
             else return false;
-            
+
         }
 
         public char GetFirstLetterOfString(string val)
@@ -55,12 +55,12 @@ namespace ChallengesWithTestsMark8
 
         public char GetLastLetterOfString(string val)
         {
-            return val[val.Length-1];
+            return val[val.Length - 1];
         }
 
         public decimal Divide(decimal dividend, decimal divisor)
         {
-            if ( divisor == 0)
+            if (divisor == 0)
             {
                 return 0;
             }
@@ -77,18 +77,18 @@ namespace ChallengesWithTestsMark8
             var x = Enumerable.Range(1, 100);
 
             return x.Where(x => x % 2 != 0).ToArray();
-          
-   
-          
+
+
+
         }
 
         public void ChangeAllElementsToUppercase(string[] words)
         {
-             for ( var i = 0; i < words.Length; i++)
+            for (var i = 0; i < words.Length; i++)
             {
                 words[i] = words[i].ToUpper();
             }
-            
+
         }
     }
 }
