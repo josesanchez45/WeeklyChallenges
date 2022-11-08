@@ -77,9 +77,6 @@ namespace ChallengesWithTestsMark8
             var x = Enumerable.Range(1, 100);
 
             return x.Where(x => x % 2 != 0).ToArray();
-
-
-
         }
 
         public void ChangeAllElementsToUppercase(string[] words)
