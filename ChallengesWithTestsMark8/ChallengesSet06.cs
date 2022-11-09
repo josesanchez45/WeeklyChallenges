@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Xunit;
 
 namespace ChallengesWithTestsMark8
 {
@@ -13,13 +14,26 @@ namespace ChallengesWithTestsMark8
             {
                 return false;
             }
-            return words.Contains(word);
-           
+           ignoreCase = words.Any(x => x == word.ToLower());
+           return words.Contains(word) && ignoreCase;              
         }
 
         public bool IsPrimeNumber(int num)
         {
-            throw new NotImplementedException();
+            var a = 0;
+            for (int i = 1; i <= num;  i++)
+            {
+                if( num % i == 0)
+                {
+                    a++;
+                }
+            }
+            if (a == 2)
+            {
+                return true;
+            }
+            else 
+                return false;
         }
 
         public int IndexOfLastUniqueLetter(string str)
