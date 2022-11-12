@@ -9,13 +9,29 @@ namespace ChallengesWithTestsMark8
     {
         public bool CollectionContainsWord(IEnumerable<string> words, string word, bool ignoreCase)
         {
-            
-            if (words == null)
+
+            bool containsWord = false;
+
+            if (string.Equals(words, null) || words.Contains(null))
             {
                 return false;
             }
-           ignoreCase = words.Any(x => x == word.ToLower());
-           return words.Contains(word) && ignoreCase;              
+
+            if (ignoreCase == true)
+            {
+                word = word.ToLower();
+
+                List<string> lc = words.Select(x => x.ToLower()).ToList();
+
+                containsWord = lc.Contains(word);
+            }
+
+            if (ignoreCase == false)
+            {
+                containsWord = words.Contains(word);
+            }
+
+            return containsWord;
         }
 
         public bool IsPrimeNumber(int num)
@@ -38,7 +54,7 @@ namespace ChallengesWithTestsMark8
 
         public int IndexOfLastUniqueLetter(string str)
         {
-            throw new NotImplementedException();
+            return str.IndexOf(str.Distinct().Reverse().FirstOrDefault(x => str.Count(y => y.Equals(x)) == 1));
         }
 
         public int MaxConsecutiveCount(int[] numbers)
