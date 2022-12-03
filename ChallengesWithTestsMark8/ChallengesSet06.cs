@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Drawing;
 using System.Linq;
+using System.Text.RegularExpressions;
 using Xunit;
 
 namespace ChallengesWithTestsMark8
@@ -37,9 +40,9 @@ namespace ChallengesWithTestsMark8
         public bool IsPrimeNumber(int num)
         {
             var a = 0;
-            for (int i = 1; i <= num;  i++)
+            for (int i = 1; i <= num; i++)
             {
-                if( num % i == 0)
+                if (num % i == 0)
                 {
                     a++;
                 }
@@ -48,7 +51,7 @@ namespace ChallengesWithTestsMark8
             {
                 return true;
             }
-            else 
+            else
                 return false;
         }
 
@@ -59,12 +62,49 @@ namespace ChallengesWithTestsMark8
 
         public int MaxConsecutiveCount(int[] numbers)
         {
-            throw new NotImplementedException();
+            if (numbers == null || numbers.Length == 0)
+            {
+                return 0;
+            }
+            var currentNumber = numbers[0];
+            var count = 0;
+            var highestCount = 0;
+            foreach (var num in numbers)
+            {
+                if (num == currentNumber)
+                {
+                    count++;
+                    if (count > highestCount)
+                    {
+                        highestCount = count;
+                    }
+                }
+                else
+                {
+                    if (count > highestCount)
+                    {
+                        highestCount = count;
+                    }
+                    currentNumber = num;
+                    count = 1;
+                }
+            }
+            return highestCount;
         }
 
         public double[] GetEveryNthElement(List<double> elements, int n)
         {
-            throw new NotImplementedException();
+            var result = new List<double>();
+            if (elements == null || n <= 0 || elements.Count == 0 || n < 0 || !elements.Any())
+            {
+                return result.ToArray();
+            }
+            for (int i = n-1; i < elements.Count; i+=n)
+            {
+                result.Add(elements[i]);
+            }
+
+            return result.ToArray();
         }
     }
 }
