@@ -6735,11 +6735,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\17144\\Desktop\\repos\\WeeklyChallenges\\WeeklyChallenges\\ChallengesWithTestsMark8.Tests\\ChallengesWithTestsMark8.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\17144\\Desktop\\repos\\WeeklyChallenges\\ChallengesWithTestsMark8.Tests\\ChallengesWithTestsMark8.Tests.csproj",
       "projectName": "ChallengesWithTestsMark8.Tests",
-      "projectPath": "C:\\Users\\17144\\Desktop\\repos\\WeeklyChallenges\\WeeklyChallenges\\ChallengesWithTestsMark8.Tests\\ChallengesWithTestsMark8.Tests.csproj",
+      "projectPath": "C:\\Users\\17144\\Desktop\\repos\\WeeklyChallenges\\ChallengesWithTestsMark8.Tests\\ChallengesWithTestsMark8.Tests.csproj",
       "packagesPath": "C:\\Users\\17144\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\17144\\Desktop\\repos\\WeeklyChallenges\\WeeklyChallenges\\ChallengesWithTestsMark8.Tests\\obj\\",
+      "outputPath": "C:\\Users\\17144\\Desktop\\repos\\WeeklyChallenges\\ChallengesWithTestsMark8.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\17144\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6756,8 +6756,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\17144\\Desktop\\repos\\WeeklyChallenges\\WeeklyChallenges\\ChallengesWithTestsMark8\\ChallengesWithTestsMark8.csproj": {
-              "projectPath": "C:\\Users\\17144\\Desktop\\repos\\WeeklyChallenges\\WeeklyChallenges\\ChallengesWithTestsMark8\\ChallengesWithTestsMark8.csproj"
+            "C:\\Users\\17144\\Desktop\\repos\\WeeklyChallenges\\ChallengesWithTestsMark8\\ChallengesWithTestsMark8.csproj": {
+              "projectPath": "C:\\Users\\17144\\Desktop\\repos\\WeeklyChallenges\\ChallengesWithTestsMark8\\ChallengesWithTestsMark8.csproj"
             }
           }
         }
@@ -6801,7 +6801,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

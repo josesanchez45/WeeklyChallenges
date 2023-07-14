@@ -8,11 +8,8 @@ namespace ChallengesWithTestsMark8
     {
         public int AddEvenSubtractOdd(int[] numbers)
         {
-            var evens = numbers.Where(x => x % 2 == 0).ToList().Sum();
-            var odds = numbers.Where(x => x % 2 != 0).ToList().Sum();
-
-            return evens - odds;
-
+             return numbers.Where(x => x % 2 == 0).Sum() - numbers.Where(x => x % 2 != 0).Sum();
+                     
         }
 
         public int GetLengthOfShortestString(string str1, string str2, string str3, string str4)
